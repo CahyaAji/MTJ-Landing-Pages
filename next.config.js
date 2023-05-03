@@ -3,7 +3,14 @@ const nextConfig = {
   trailingSlash: true,
   output: 'export',
   images: {
-    domains: ['https://cahyaaji.github.io/mtj-landing-pages/']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cahyaaji.github.io',
+        port: '',
+        pathname: '/mtj-landing-pages/*'
+      }
+    ]
   },
   experimental: {
     appDir: true,
