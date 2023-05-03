@@ -6,6 +6,7 @@ const montserrat = Montserrat({subsets: ['latin']})
 
 export const metadata = {
   title: 'Menoreh Tanjung Jaya',
+  icons: 'https://cahyaaji.github.io/mtj-landing-pages/favicon.ico'
 }
 
 export default function RootLayout({
