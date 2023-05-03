@@ -5,13 +5,13 @@ export default function Home() {
   return (
   <main>
     <div className="shadow-sm p-8 bg-white-blue">
-      <div className="flex w-auto h-64 bg-[url('/mjt_banner.png')] bg-contain bg-center bg-no-repeat"/>
+      <div className="flex w-auto h-64 bg-[url('mjt_banner.png')] bg-contain bg-center bg-no-repeat"/>
       <h1 className="mx-auto text-center font-bold text-blue-deep max-w-3xl">Ini dapat diisi dengan deskripsi pendek, 1 sampai 3 kalimat. Ini dapat diisi dengan deskripsi pendek, 1 sampai 3 kalimat.</h1>
     </div>
     <div className="text-center">
       <div className="flex mx-16 p-4 w-auto max-h-fit shadow-lg justify-evenly">
         <div>
-          <Image src='/soundoke.png' alt="sewa" width='480' height='440' style={{objectFit:"cover", borderRadius: "10px"}}/>
+          <Image src='soundoke.png' alt="sewa" width='480' height='440' style={{objectFit:"cover", borderRadius: "10px"}}/>
         </div>
         <div className="max-w-md text-left">
           <h1 className="text-lg pb-2">MJT Entertainment</h1>
