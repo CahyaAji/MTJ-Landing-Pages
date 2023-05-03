@@ -2,6 +2,9 @@
 const nextConfig = {
   trailingSlash: true,
   output: 'export',
+  images: {
+    domains: ['https://cahyaaji.github.io/mtj-landing-pages/']
+  },
   experimental: {
     appDir: true,
   },
