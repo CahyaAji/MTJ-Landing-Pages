@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="flex h-18 items-center justify-between">
       <Link className="inline-flex  my-0 px-4 py-2 hover:shadow-xl" href="/">
-        <Image src="/logo_mtj.svg" width={20} height={28} alt="MTJ Logo"/>
+        <Image src="logo_mtj.svg" width={20} height={28} alt="MTJ Logo"/>
         <span className="my-auto ml-2 font-semibold text-lg">Menoreh Tanjung Jaya</span>
       </Link>
       <ul className="block mr-8">
