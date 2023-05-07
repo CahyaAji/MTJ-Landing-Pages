@@ -1,13 +1,8 @@
-import Navbar from '../components/navbar'
-import './globals.css'
 import { Montserrat } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/Header'
 
-const montserrat = Montserrat({subsets: ['latin']})
-
-export const metadata = {
-  title: 'Menoreh Tanjung Jaya',
-  icons: 'https://cahyaaji.github.io/mtj-landing-pages/favicon.ico'
-}
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -16,14 +11,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/logo_mtj.svg" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menoreh Tanjung Jaya</title>
+      </head>
       <body className={montserrat.className}>
-        <header className='px-2 content-center shadow-lg sticky top-0 z-50 bg-[#FFFFFF]'><Navbar/></header>
-        {/* bg-gradient-to-r from-blue-deep from-5% */}
+        <Header />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
-
-
-
